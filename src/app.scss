@@ -1,0 +1,64 @@
+@import "sass/utilities";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: var(--fs-400);
+  padding-top: 5rem;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 45px;
+  color: var(--very-dark-magenta);
+  line-height: 1;
+  margin-bottom: 0.2em;
+  font-weight: 800;
+  @media (max-width: 50em) {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+
+.heading-title {
+  font-size: var(--fs-500);
+  line-height: 1.8;
+  color: var(--dark-grayish-magenta);
+  font-size: var(--fs-400);
+  @media (max-width: 50em) {
+    text-align: center;
+    margin-top: 2rem;
+    line-height: 1.8;
+  }
+}
+
+.container {
+  max-width: 68rem;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 30fr 50fr;
+  gap: 16%;
+
+  @media (max-width: 50em) {
+    grid-template-columns: 1fr;
+  }
+}
